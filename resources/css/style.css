@@ -24,4 +24,11 @@ p {
   background-color: rgb(32,64,86);
   border: solid 4px #fff;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 7rem;
+  font-weight: 900;
+  cursor: pointer;
 }
