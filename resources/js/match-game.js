@@ -12,7 +12,7 @@ var MatchGame = {};
 MatchGame.generateCardValues = function () {
   var value = [];
   for (var i=1; i<=8; i++) {
-    value.push(1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8);
+    value.push(i,i);
   };
   var random =[];
   while (value.length) {
