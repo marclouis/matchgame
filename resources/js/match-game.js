@@ -10,17 +10,22 @@ var MatchGame = {};
  */
 
 MatchGame.generateCardValues = function () {
-  var value = [];
-  for (var i=0; i<=8; i++) {
-    value.push(i,i);
+  let value = [];
+  for (let i=0; i<=8; i++) {
+    value.push(i);
+    value.push(i);
   };
-  var random =[];
-  while (value.length) {
-    var rando = Math.floor(Math.random() * 16);
-    random.push(rando[value]);
+  return value;
+
+  let random =[];
+  while (value.length>0) {
+    let rando = Math.floor(Math.random() * value.length);
+    let randoSplice = value.splice(rando,1)[0];
+    random.push(randoSplice);
   };
   return random;
 };
+console.log(random);
 
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
